@@ -51,7 +51,7 @@ test('installed clients use env configuration, verify without reporting and fail
     {
       name: 'npm',
       runtime: process.execPath,
-      bin: join(project, 'node_modules/@upbot/dependencies/bin/upbot.mjs'),
+      bin: join(project, 'node_modules/@upbot-eu/dependencies/bin/upbot.mjs'),
     },
   ];
   if (process.env.UPBOT_TEST_PHP_ROOT)
