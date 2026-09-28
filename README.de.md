@@ -8,7 +8,7 @@ transitiver und Entwicklungsabhängigkeiten. Übermittelt Paketnamen, Versionen,
 Ökosystem, Kennzeichen für Entwicklungsabhängigkeiten und Paketquellen sowie
 eine optionale Release-Kennung.
 
-**Die Veröffentlichung in der Registry steht noch aus.** Danach:
+Im Projekt installieren:
 
 ```sh
 npm install @upbot-eu/dependencies
@@ -37,9 +37,6 @@ Vorhandene Dateien werden nicht überschrieben. Weitere optionale Einstellungen:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Bis zur Veröffentlichung können Entwickler das lokale Archiv installieren:
-`npm install /absolute/path/upbot-eu-dependencies-0.1.0.tgz`.
 
 ## Prüfung und Konfiguration
 

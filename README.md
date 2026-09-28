@@ -6,7 +6,7 @@ Node.js **20.12+ (20.x) or 22+**. No runtime dependencies. Reads `composer.lock`
 and/or `package-lock.json` (npm v1–v3), including transitive and dev dependencies.
 Sends package names, versions, ecosystem, dev/source flags and an optional release.
 
-**Registry publication is pending.** After publication, install in the project:
+Install in the project:
 
 ```sh
 npm install @upbot-eu/dependencies
@@ -35,9 +35,6 @@ It will not overwrite existing files. Optional settings:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Until publication, developers can install the prepared local archive:
-`npm install /absolute/path/upbot-eu-dependencies-0.1.0.tgz`.
 
 `doctor` checks configuration, lockfiles, connection and token without sending or
 changing inventory. It requires UpBot's `/v1/dependencies/verify` endpoint.

@@ -7,7 +7,7 @@ Node.js **20.12+ v rade 20.x alebo 22+**. Bez runtime závislostí. Číta
 a dev závislostí. Odosiela názvy balíkov, verzie, ekosystém, príznaky dev/zdroja
 a voliteľný identifikátor release.
 
-**Balík zatiaľ nie je publikovaný v registri.** Po publikovaní:
+Inštalácia v projekte:
 
 ```sh
 npm install @upbot-eu/dependencies
@@ -36,9 +36,6 @@ Existujúci súbor neprepíše. Ďalšie voliteľné nastavenia:
 # UPBOT_RELEASE=deploy-42
 # UPBOT_PRIVATE_PACKAGES=company/internal,@company/private
 ```
-
-Pred publikovaním môžu vývojári použiť lokálny archív:
-`npm install /absolute/path/upbot-eu-dependencies-0.1.0.tgz`.
 
 ## Overenie a konfigurácia
 
