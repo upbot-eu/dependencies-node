@@ -10,7 +10,7 @@ a voliteľný identifikátor release.
 **Balík zatiaľ nie je publikovaný v registri.** Po publikovaní:
 
 ```sh
-npm install @upbot/dependencies
+npm install @upbot-eu/dependencies
 ```
 
 Do existujúceho súkromného `.env` alebo prostredia procesu pridaj token sledovania:
@@ -38,7 +38,7 @@ Existujúci súbor neprepíše. Ďalšie voliteľné nastavenia:
 ```
 
 Pred publikovaním môžu vývojári použiť lokálny archív:
-`npm install /absolute/path/upbot-dependencies-0.1.0.tgz`.
+`npm install /absolute/path/upbot-eu-dependencies-0.1.0.tgz`.
 
 ## Overenie a konfigurácia
 
@@ -59,7 +59,7 @@ a vylúč súbor z Gitu. Nepoužívaj `NEXT_PUBLIC_` ani inú premennú dostupn�
 Denný cron; uprav cesty k runtime a projektu (`command -v node`):
 
 ```cron
-17 3 * * * /usr/bin/node /var/www/project/current/node_modules/@upbot/dependencies/bin/upbot.mjs report --project-dir /var/www/project/current --dotenv /home/deploy/.config/upbot/project.env >> /home/deploy/upbot-report.log 2>&1
+17 3 * * * /usr/bin/node /var/www/project/current/node_modules/@upbot-eu/dependencies/bin/upbot.mjs report --project-dir /var/www/project/current --dotenv /home/deploy/.config/upbot/project.env >> /home/deploy/upbot-report.log 2>&1
 ```
 
 Očakávaný interval v UpBote nastav na 24 hodín. Pre 6 hodín použi `17 */6 * * *`.

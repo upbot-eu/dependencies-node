@@ -1,5 +1,5 @@
 {
-  "name": "@upbot/dependencies",
+  "name": "@upbot-eu/dependencies",
   "version": "0.1.0",
   "description": "Send a minimal Composer/npm dependency inventory to UpBot",
   "type": "module",

@@ -11,7 +11,7 @@ eine optionale Release-Kennung.
 **Die Veröffentlichung in der Registry steht noch aus.** Danach:
 
 ```sh
-npm install @upbot/dependencies
+npm install @upbot-eu/dependencies
 ```
 
 Das Token dieses Monitors in die vorhandene private `.env` oder Prozessumgebung eintragen:
@@ -39,7 +39,7 @@ Vorhandene Dateien werden nicht überschrieben. Weitere optionale Einstellungen:
 ```
 
 Bis zur Veröffentlichung können Entwickler das lokale Archiv installieren:
-`npm install /absolute/path/upbot-dependencies-0.1.0.tgz`.
+`npm install /absolute/path/upbot-eu-dependencies-0.1.0.tgz`.
 
 ## Prüfung und Konfiguration
 
@@ -63,7 +63,7 @@ Keine `NEXT_PUBLIC_`-Variable oder andere im Browser zugängliche Variable verwe
 Täglicher Cronjob; Laufzeit- und Projektpfade anpassen (`command -v node`):
 
 ```cron
-17 3 * * * /usr/bin/node /var/www/project/current/node_modules/@upbot/dependencies/bin/upbot.mjs report --project-dir /var/www/project/current --dotenv /home/deploy/.config/upbot/project.env >> /home/deploy/upbot-report.log 2>&1
+17 3 * * * /usr/bin/node /var/www/project/current/node_modules/@upbot-eu/dependencies/bin/upbot.mjs report --project-dir /var/www/project/current --dotenv /home/deploy/.config/upbot/project.env >> /home/deploy/upbot-report.log 2>&1
 ```
 
 Das erwartete Intervall in UpBot auf 24 Stunden einstellen. Für 6 Stunden
