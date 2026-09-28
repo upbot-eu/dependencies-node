@@ -1,0 +1,38 @@
+{
+  "name": "@upbot/dependencies",
+  "version": "0.1.0",
+  "description": "Send a minimal Composer/npm dependency inventory to UpBot",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upbot-eu/dependencies-node.git"
+  },
+  "homepage": "https://github.com/upbot-eu/dependencies-node#readme",
+  "bugs": "https://github.com/upbot-eu/dependencies-node/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^20.12.0 || >=22.0.0"
+  },
+  "bin": {
+    "upbot": "bin/upbot.mjs"
+  },
+  "exports": "./src/index.mjs",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "README.de.md",
+    "README.sk.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "oxlint src bin",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "oxlint": "1.76.0"
+  }
+}
